@@ -21,17 +21,18 @@ html {
   justify-content: flex-start;
   width: 300px;
   min-height: 440px;
-  /* background-color: #ffffff; */
   color: aliceblue;
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
   margin: 128px auto;
   border-radius: 10px;
-  /*   padding-bottom: 32px; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
-/* City Search  */
+/* City Search */
 .city-search {
   width: 200px;
   box-sizing: border-box;
@@ -40,18 +41,15 @@ html {
   border-radius: 20px;
   font-size: 16px;
   background-color: white;
-  /* background-color: rgba(226, 226, 226, 0.6); */
   background-image: url(./components/searchicon.png);
   background-position: 10px 10px;
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
-  -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
 
 .city-search:focus {
   width: 60%;
-  /* background-color: white; */
 }
 
 /* city name */
@@ -95,16 +93,15 @@ h2 {
   margin-top: auto;
 }
 
+/* Responsive Design */
 @media (max-width: 376px) {
-  .html {
+  html {
     width: 300px;
     height: 450px;
   }
+  
+  .App {
+    margin: 20px auto;
+    padding: 10px 20px;
+  }
 }
-
-.App {
-  margin: 20px auto;
-  padding: 10px 20px;
-  font-size: 4.5rem;
-  font-weight: 500;
-}}
